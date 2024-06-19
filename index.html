@@ -18,6 +18,7 @@
             padding: 0;
             background-color: #f4f4f4;
             text-align: center;
+            color: #333;
         }
         .container {
             max-width: 800px;
@@ -28,34 +29,28 @@
         header {
             background: #333;
             color: #fff;
-            padding-top: 30px;
-            min-height: 70px;
+            padding: 20px 0;
             border-bottom: #77c7f7 3px solid;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
-        header a {
+        header .branding img {
+            max-width: 50px;
+        }
+        header nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        header nav ul li {
+            display: inline;
+            margin-left: 20px;
+        }
+        header nav ul li a {
             color: #fff;
             text-decoration: none;
             text-transform: uppercase;
             font-size: 16px;
-        }
-        ul {
-            padding: 0;
-            list-style: none;
-        }
-        .branding {
-            float: left;
-        }
-        nav {
-            float: right;
-            margin-top: 10px;
-        }
-        nav ul {
-            margin: 0;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin-left: 5px;
         }
         .showcase {
             min-height: 400px;
@@ -99,6 +94,22 @@
             background: #fff;
             padding: 2rem;
         }
+        .main-content h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        .main-content article {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+        .main-content article h3 {
+            font-size: 1.5rem;
+            color: #333;
+        }
+        .main-content article p {
+            font-size: 1rem;
+            color: #666;
+        }
         footer {
             background: #333;
             color: #fff;
@@ -106,27 +117,27 @@
             padding: 1rem;
             margin-top: 20px;
         }
+        footer p {
+            margin: 0;
+        }
     </style>
 </head>
 <body>
     <header>
-        <div class="container">
-            <div class="branding">
-                <h1>Siracha Blog</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
+        <div class="branding">
+            <img src="SIRACHA_LOGOS-10.jpg" alt="Siracha Logo">
         </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
     <section class="showcase">
         <div class="container">
-            <img src="SIRACHA_LOGOS-10.jpg" alt="Siracha Logo">
             <h1>The Secret Sauce</h1>
             <p>Your source for AI tools and insights</p>
             <div class="cta">
@@ -140,8 +151,6 @@
 
     <div class="container main-content">
         <h2>Latest Posts</h2>
-        <p>This is where your blog content will go. You can add new blog posts here.</p>
-        <!-- Example blog post -->
         <article>
             <h3>Post Title</h3>
             <p>Posted on June 19, 2024 by Author</p>
